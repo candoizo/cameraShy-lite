@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>headerCellClass</key>
+			<string>cameraShyTitleCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>COMPAT_HEADER_TEXT</string>
+			<key>footerText</key>
+			<string>COMPAT_FOOTER_TEXT</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.candoizo.camerashy</string>
+			<key>key</key>
+			<string>solidg</string>
+			<key>label</key>
+			<string>COMPAT_SOLID_LABEL</string>
+			<key>PostNotification</key>
+			<string>com.candoizo.camerashy.settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.candoizo.camerashy</string>
+			<key>key</key>
+			<string>nosuggest</string>
+			<key>label</key>
+			<string>COMPAT_DISABLE_LABEL</string>
+			<key>PostNotification</key>
+			<string>com.candoizo.camerashy.settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>DEVELOPER_HEADER_TEXT</string>
+			<key>footerText</key>
+			<string>DEVELOPER_FOOTER_TEXT</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Follow me on Twitter 🐦</string>
+			<key>icon</key>
+			<string>Twitter.png</string>
+			<key>id</key>
+			<string>twitterButton</string>
+			<key>action</key>
+			<string>twitterButton</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Listen to a hot track 🔥</string>
+			<key>icon</key>
+			<string>Soundcloud.png</string>
+			<key>id</key>
+			<string>fireButton</string>
+			<key>action</key>
+			<string>fireButton</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Support my work 😊</string>
+			<key>icon</key>
+			<string>Paypal.png</string>
+			<key>id</key>
+			<string>paypalButton</string>
+			<key>action</key>
+			<string>paypalButton</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Share some satoshi 🌿</string>
+			<key>icon</key>
+			<string>bitcoin.png</string>
+			<key>id</key>
+			<string>btcButton</string>
+			<key>action</key>
+			<string>btcButton</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Known issues? 🐛</string>
+			<key>icon</key>
+			<string>Bug.png</string>
+			<key>id</key>
+			<string>bugButton</string>
+			<key>action</key>
+			<string>bugButton</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>⚙</string>
+</dict>
+</plist>

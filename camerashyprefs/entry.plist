@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = cameraShyPrefs;
+	cell = PSLinkCell;
+	detail = cameraShyPrefsListController;
+	icon = cameraShy.png;
+	isController = 1;
+	label = cameraShy;
+    };
+}

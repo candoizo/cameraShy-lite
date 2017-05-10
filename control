@@ -1,0 +1,11 @@
+Package: com.candoizo.camerashy
+Name: camerashy
+Depends: mobilesubstrate
+Pre-Depends: firmware (>= 10.0)
+Version: 2.0.3
+Architecture: iphoneos-arm
+Description: Send the lockscreen camera icon to the corner!
+Maintainer: candoizo
+Author: candoizo
+Section: Tweaks
+Icon: file:///Library/PreferenceBundles/camerashyprefs.bundle/cameraShy@2.png
