@@ -26,8 +26,8 @@ static void prefsCallback(CFNotificationCenterRef center, void *observer, CFStri
 - (id)_pageIndicatorImage:(_Bool)arg1 { return nil;} //no images for the dots, weeeeeee
 
 -(double)_indicatorSpacing { //spacing inbetween
-if 			([self numberOfPages] == 1) { return %orig; } //no camera so do nothing
-else if ([self numberOfPages] == 2) {
+ if 			([self numberOfPages] == 1) { return %orig; } //no camera so do nothing
+ else if ([self numberOfPages] == 2) {
 	//check the orientation
 	double screenHeight = [[%c(UIScreen) mainScreen] bounds].size.height;
 	double screenWidth = [[%c(UIScreen) mainScreen] bounds].size.width;
@@ -58,7 +58,6 @@ else if ([self numberOfPages] == 2) {
 				return sweet;
 			}
 		 else {
-			 //
   	 double sweet = screenWidth*0.466666;
   	 return sweet;
 	 }
@@ -67,13 +66,9 @@ else if ([self numberOfPages] == 2) {
 %end
 
 %hook SBDashBoardSlideUpToAppController //hides app grabber because it hides my thingy for some reason, probably because i actually end up extending the frame with my method of choice :p
--(void)_setTargetApp:(id)arg1 withAppSuggestion:(id)arg2 {
-  if(!nosuggest){
-    %orig();
-	}
-	else {
-		//we dont do anything
-	}
+-(void)_setTargetApp:(id)arg1 withAppSuggestion:(id)arg2 { //maybe one day ill fix it
+  if (!nosuggest){  %orig();}
+	else  				 {/*do nothing*/}
 }
 %end
 
@@ -81,7 +76,6 @@ else if ([self numberOfPages] == 2) {
 %ctor {
 	@autoreleasepool {
 		loadPreferences();
-
 		CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(),
 			NULL,
 			(CFNotificationCallback)prefsCallback,
